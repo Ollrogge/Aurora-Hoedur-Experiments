@@ -29,12 +29,12 @@ ENV GIT_COMMITTER_EMAIL=user@hoedur
 
 # get hoedur
 ENV HOEDUR=/home/user/hoedur
-RUN (git clone https://github.com/Ollrogge/hoedur $HOEDUR/ && cd $HOEDUR && git checkout dev2 && echo "hello29")
+RUN (git clone https://github.com/Ollrogge/hoedur $HOEDUR/ && cd $HOEDUR && git checkout dev2)
 #WORKDIR $HOEDUR
 
 # get aurora
 ENV AURORA=/home/user/aurora
-RUN (git clone https://github.com/Ollrogge/aurora $AURORA/ && cd $AURORA && git checkout dev && echo "hello30")
+RUN (git clone https://github.com/Ollrogge/aurora $AURORA/ && cd $AURORA && git checkout dev)
 
 COPY --chown=user patches $HOEDUR/patches
 WORKDIR $HOEDUR
