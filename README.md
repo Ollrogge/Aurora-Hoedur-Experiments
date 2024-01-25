@@ -1,6 +1,6 @@
 # Hoedur + Aurora
 This repository contains docker scripts to fuzz firmware using Hoedur and subsequently
-perform root cause analyis on found crashes using Aurora.
+perform root cause analysis on found crashes using Aurora.
 
 ## Install
 Simply run `python install.py`. This will install the docker container.
